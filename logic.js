@@ -8,6 +8,7 @@ let img = document.querySelector("#img");
 
 const search = async (city) => {
   try {
+    city = city.trim();
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     let data = await response.json();
 
