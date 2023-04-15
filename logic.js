@@ -33,10 +33,18 @@ const search = async (city) => {
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+     if (window.innerWidth <= 450) {
+      input.value = "";
+      input.blur();
+    }
   } catch (error) {
     console.log(error);
     body.style.display = "none";
     notfound.style.display = "flex";
+     if (window.innerWidth <= 450) {
+//       input.value = "";
+      input.blur();
+    }
   }
 };
 
