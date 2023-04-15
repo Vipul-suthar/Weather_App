@@ -142,11 +142,11 @@ body {
 @media (max-width: 450px) {
   body {
     backdrop-filter: blur(5px);
-    justify-content:flex-start;
+ align-items:flex-start;
   }
   .container {
     width: 90%;
-    padding: 50px 0px;
+    padding: 60px 0px;
     /* border: 10px solid black; */
     background: none;
   }
@@ -162,9 +162,9 @@ body {
     margin-left: 14px;
   }
   .container .containerBody h2 {
- 
-  margin-bottom: 70px;
-  
+     font-size: 35px;
+     margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 }
 @media (max-width: 310px) {
